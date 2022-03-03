@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-UILearn-UILearnUITests/Pods-UILearn-UILearnUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
+${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
