@@ -2,25 +2,31 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - MJExtension (3.4.1)
   - MJRefresh (3.7.5)
 
 DEPENDENCIES:
   - FMDB
+  - MagicalRecord (= 2.3.2)
   - MJExtension
   - MJRefresh
 
 SPEC REPOS:
   trunk:
     - FMDB
+    - MagicalRecord
     - MJExtension
     - MJRefresh
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
 
-PODFILE CHECKSUM: b252d3ab2f60c54fdc603816d04ae2310bc1979c
+PODFILE CHECKSUM: ef1a313537420fe23dab10461243f0109f4eee42
 
 COCOAPODS: 1.11.2

@@ -40,6 +40,7 @@
 		187E613C277AAECF008D01B6 /* mapCode.db in Resources */ = {isa = PBXBuildFile; fileRef = 187E613B277AAECF008D01B6 /* mapCode.db */; };
 		187E613F277ADD04008D01B6 /* XSearchDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E613E277ADD04008D01B6 /* XSearchDBTool.m */; };
 		187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E6141277AE99D008D01B6 /* XDownWeatherInfo.m */; };
+		1889AD2027D1AC8700906A10 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1889AD1E27D1AC8700906A10 /* Model.xcdatamodeld */; };
 		1894489927840EA50051148F /* XVCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894489827840EA50051148F /* XVCTools.m */; };
 		1894489F278448B20051148F /* XWeatherHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894489E278448B20051148F /* XWeatherHome.m */; };
 		189C48BA274F1C85003A5203 /* XTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C48B9274F1C85003A5203 /* XTabBar.m */; };
@@ -134,6 +135,7 @@
 		187E613E277ADD04008D01B6 /* XSearchDBTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSearchDBTool.m; sourceTree = "<group>"; };
 		187E6140277AE99D008D01B6 /* XDownWeatherInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDownWeatherInfo.h; sourceTree = "<group>"; };
 		187E6141277AE99D008D01B6 /* XDownWeatherInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDownWeatherInfo.m; sourceTree = "<group>"; };
+		1889AD1F27D1AC8700906A10 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1894489727840EA50051148F /* XVCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XVCTools.h; sourceTree = "<group>"; };
 		1894489827840EA50051148F /* XVCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XVCTools.m; sourceTree = "<group>"; };
 		1894489D278448B20051148F /* XWeatherHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWeatherHome.h; sourceTree = "<group>"; };
@@ -395,12 +397,14 @@
 		183FCEBF274CB6E000E7964B /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				1889AD2127D1B36B00906A10 /* magicalRecord */,
 				183FCEC9274CB7AF00E7964B /* XProfileController.h */,
 				183FCECA274CB7AF00E7964B /* XProfileController.m */,
 				1846696F278527E50013A769 /* XDemoVC.h */,
 				18466970278527E50013A769 /* XDemoVC.m */,
 				18CA83AA278ED48E00678768 /* XImagePickCV.h */,
 				18CA83AB278ED48E00678768 /* XImagePickCV.m */,
+				1889AD1E27D1AC8700906A10 /* Model.xcdatamodeld */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -425,6 +429,13 @@
 				187E613B277AAECF008D01B6 /* mapCode.db */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		1889AD2127D1B36B00906A10 /* magicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = magicalRecord;
 			sourceTree = "<group>";
 		};
 		189C48BB274F1CEE003A5203 /* BaseView */ = {
@@ -758,6 +769,7 @@
 				183FCEB6274C947E00E7964B /* NavigationController.m in Sources */,
 				183FCEC5274CB78C00E7964B /* XDiscoverController.m in Sources */,
 				187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */,
+				1889AD2027D1AC8700906A10 /* Model.xcdatamodeld in Sources */,
 				183FCEC2274CB77300E7964B /* XHomeController.m in Sources */,
 				1845770C27BBCF1900B254C7 /* XThirdVC.m in Sources */,
 				182D67592750B9C7001411AA /* XHomeCell.m in Sources */,
@@ -1103,6 +1115,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1889AD1E27D1AC8700906A10 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1889AD1F27D1AC8700906A10 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1889AD1F27D1AC8700906A10 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 183FCE73274C8D3B00E7964B /* Project object */;
 }

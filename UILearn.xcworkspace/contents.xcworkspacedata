@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UILearn/component/profile/magicalRecord/Person+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:UILearn/component/profile/magicalRecord/Person+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:UILearn/component/profile/magicalRecord/Person+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:UILearn/component/profile/magicalRecord/Person+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
       location = "group:UILearn.xcodeproj">
    </FileRef>
    <FileRef

@@ -13,7 +13,7 @@
 #import "XProfileController.h"
 #import "XDiscoverController.h"
 #import "XWeatherHome.h"
-
+#import "XImagePickCV.h"
 //#import "XTabBar.h"
 
 @interface TabBarController ()
@@ -100,7 +100,7 @@
     [self setUpOneChildVcWithVc:logVC Image:@"tab_find_ unselected" selectedImage:@"tab_find_ selected" title:@"发现"];
 //    logVC.tabBarItem.badgeValue = @"消息";
     
-    XProfileController *Lock = [XProfileController new];
+    XImagePickCV *Lock = [XImagePickCV new];
     [self setUpOneChildVcWithVc:Lock Image:@"tab_my_ unselected" selectedImage:@"tab_my_ selected" title:@"我的"];
 }
 

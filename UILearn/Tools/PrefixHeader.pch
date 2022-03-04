@@ -10,6 +10,7 @@
 
 #import "CommonDefine.h"////;
 #import <MJExtension/MJExtension.h>
+#import <MagicalRecord/MagicalRecord.h>
 //
 //#ifndef CommonDefine_h
 //#define CommonDefine_h

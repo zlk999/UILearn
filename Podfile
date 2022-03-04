@@ -19,5 +19,5 @@ target 'UILearn' do
 pod 'MJRefresh'
 pod 'MJExtension'
 pod 'FMDB'
-
+pod 'MagicalRecord', ‘2.3.2’
 end

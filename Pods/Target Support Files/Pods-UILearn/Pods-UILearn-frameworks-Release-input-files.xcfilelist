@@ -2,3 +2,4 @@ ${PODS_ROOT}/Target Support Files/Pods-UILearn/Pods-UILearn-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
 ${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
+${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework

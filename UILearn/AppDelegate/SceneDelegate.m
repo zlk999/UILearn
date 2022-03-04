@@ -12,6 +12,9 @@
 #import "XMessageController.h"
 #import "XProfileController.h"
 #import "XDiscoverController.h"
+
+#import <MagicalRecord/MagicalRecord.h>
+
 @interface SceneDelegate ()
 
 @end
@@ -20,49 +23,16 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions API_AVAILABLE(ios(13.0)){
-    
-
-   //在这里手动创建新的window
-//   UIWindowScene *windowScene = (UIWindowScene *)scene;
-//   self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-//   self.window.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-//   self.window.rootViewController = [ViewController new];
-//   [self.window makeKeyAndVisible];
-
-    
     UIWindowScene *windowScene = (UIWindowScene*)scene;
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-//    [self.window setWindowScene:windowScene];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
     XHomeController *homeVC = [XHomeController new];
     TabBarController *tabbar = [[TabBarController alloc] init];
-    
-//    tabbar.delegate = self;
-    
     NavigationController *Nav = [[NavigationController alloc] initWithRootViewController:homeVC];
     self.window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];
-    
-    
-    
-//    UIWindowScene *windowScene = (UIWindowScene*)scene;
-//    self.window = [[UIWindow alloc ] initWithFrame:[UIScreen mainScreen ].bounds];
-//    self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-//    [self.window setWindowScene:windowScene];
-//    [self.window setBackgroundColor:[UIColor whiteColor]];
-//    self.window.rootViewController = [[NavigationController alloc] initWithRootViewController:homeVC];
-////    [self.window setRootViewController:[UITabBarController new]];
-//    [self.window makeKeyAndVisible];
-//
-    
-   
-    
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 }
 
 #pragma mark - 生命周期
@@ -110,6 +80,8 @@
     NSLog(@"sceneWillEnterForeground");
     // Called as the scene transitions from the background to the foreground.
     // Use this method to undo the changes made on entering the background.
+    // 对Magical Record的初始化
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"User.sqlite"];
 }
 
 
