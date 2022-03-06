@@ -86,6 +86,7 @@
 		181DBED127BCCF9B005D5EBB /* XDeleSecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDeleSecondVC.h; sourceTree = "<group>"; };
 		181DBED227BCCF9B005D5EBB /* XDeleSecondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDeleSecondVC.m; sourceTree = "<group>"; };
 		181DBED327BCCF9B005D5EBB /* XDeleSecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XDeleSecondVC.xib; sourceTree = "<group>"; };
+		1827E8D427D1EC3500E6ECDA /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
 		182D67562750B9C7001411AA /* XHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHomeCell.h; sourceTree = "<group>"; };
 		182D67572750B9C7001411AA /* XHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHomeCell.m; sourceTree = "<group>"; };
 		182D675B2750BAAF001411AA /* XHomeableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHomeableViewController.h; sourceTree = "<group>"; };
@@ -1120,9 +1121,10 @@
 		1889AD1E27D1AC8700906A10 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				1827E8D427D1EC3500E6ECDA /* Model 2.xcdatamodel */,
 				1889AD1F27D1AC8700906A10 /* Model.xcdatamodel */,
 			);
-			currentVersion = 1889AD1F27D1AC8700906A10 /* Model.xcdatamodel */;
+			currentVersion = 1827E8D427D1EC3500E6ECDA /* Model 2.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
