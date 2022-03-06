@@ -64,7 +64,25 @@
     [deleteData setTitle:@"deleteData" forState:(UIControlStateNormal)];
     [deleteData addTarget:self action:@selector(deleteData) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:deleteData];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 550, 200, 50)];
+    [btn setTitle:@"按钮点击" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    // 按钮不可点击时,文字颜色置灰
+    [btn setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+//    btn.center = self.view.center;
+    [btn addTarget:self action:@selector(tapBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
+
+- (void)tapBtn:(UIButton *)btn{//防止按钮多次点击
+    btn.enabled = NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        btn.enabled = YES;
+    });
+}
+
 
 - (void)createData{
     Person *pp = [Person MR_createEntity];
