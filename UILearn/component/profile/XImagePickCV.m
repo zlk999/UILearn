@@ -7,7 +7,7 @@
 
 #import "XImagePickCV.h"
 #import "Person+CoreDataProperties.h"
-
+#import "UIButton+XExtension.h"
 @interface XImagePickCV ()
 
 @end
@@ -74,14 +74,63 @@
 //    btn.center = self.view.center;
     [btn addTarget:self action:@selector(tapBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    [self drawExpecialBtn];
 }
 
-- (void)tapBtn:(UIButton *)btn{//防止按钮多次点击
-    btn.enabled = NO;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        btn.enabled = YES;
-    });
+//方法一
+//通过UIButton的enabled属性和userInteractionEnabled属性控制按钮是否可点击。此方案在逻辑上比较清晰、易懂，但具体代码书写分散，常常涉及多个地方。
+//- (void)tapBtn:(UIButton *)btn{//防止按钮多次点击
+//    btn.enabled = NO;
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        btn.enabled = YES;
+//    });
+//}
+
+//方法二：
+// 此方法会在连续点击按钮时取消之前的点击事件，从而只执行最后一次点击事件
+//+ (void)cancelPreviousPerformRequestsWithTarget:(id)aTarget selector:(SEL)aSelector object:(nullable id)anArgument;
+// 多长时间后做某件事情
+//- (void)performSelector:(SEL)aSelector withObject:(nullable id)anArgument afterDelay:(NSTimeInterval)delay;
+//- (void)tapBtn:(UIButton *)btn{//防止按钮多次点击
+//    NSLog(@"按钮点击了");
+//    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(ButtonClickAction:) object:btn];
+//    [self performSelector:@selector(ButtonClickAction:) withObject:btn afterDelay:2.0];
+//
+//}
+//- (void)ButtonClickAction:(UIButton*)btn{
+//    NSLog(@"点真正开始执行业务 - 比如网络请求...");
+//}
+
+/**方法3
+ 
+ 通过Runtime交换UIButton的响应事件方法，从而控制响应事件的时间间隔。
+
+ 实现步骤如下:
+
+ 创建一个UIButton的分类，使用runtime增加public属性cs_eventInterval和private属性cs_eventInvalid。
+ 在+load方法中使用runtime将UIButton的-sendAction:to:forEvent:方法与自定义的cs_sendAction:to:forEvent:方法进行交换
+ 使用cs_eventInterval作为控制cs_eventInvalid的计时因子，用cs_eventInvalid控制UIButton的event事件是否有效。
+*/
+
+/** 用法 */
+- (void)drawExpecialBtn{
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 650, 200, 50)];
+    [btn setTitle:@"运行时防止重复点击" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    // 按钮不可点击时,文字颜色置灰
+    [btn setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+    btn.backgroundColor = UIColor.systemPinkColor;
+    [btn addTarget:self action:@selector(tapBtn:) forControlEvents:UIControlEventTouchUpInside];
+    btn.cs_eventInterval = 2.0;
+    [self.view addSubview:btn];
 }
+
+- (void)tapBtn:(UIButton *)btn {
+    NSLog(@"按钮点击...");
+}
+
 
 
 - (void)createData{
