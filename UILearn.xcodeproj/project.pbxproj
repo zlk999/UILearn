@@ -36,7 +36,10 @@
 		1845770C27BBCF1900B254C7 /* XThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845770A27BBCF1900B254C7 /* XThirdVC.m */; };
 		1845770D27BBCF1900B254C7 /* XThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1845770B27BBCF1900B254C7 /* XThirdVC.xib */; };
 		18466971278527E50013A769 /* XDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18466970278527E50013A769 /* XDemoVC.m */; };
+		18512A3027D9916800E55641 /* 01foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18512A2F27D9916800E55641 /* 01foods.plist */; };
 		186D73CE27D4AA8B00D3C102 /* UIButton+XExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D73CD27D4AA8B00D3C102 /* UIButton+XExtension.m */; };
+		187A8CE027D8DAF900F7986E /* XRandomPickFoof.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A8CDE27D8DAF900F7986E /* XRandomPickFoof.m */; };
+		187A8CE127D8DAF900F7986E /* XRandomPickFoof.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187A8CDF27D8DAF900F7986E /* XRandomPickFoof.xib */; };
 		187E6139277AAE0B008D01B6 /* XWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E6138277AAE0B008D01B6 /* XWeatherModel.m */; };
 		187E613C277AAECF008D01B6 /* mapCode.db in Resources */ = {isa = PBXBuildFile; fileRef = 187E613B277AAECF008D01B6 /* mapCode.db */; };
 		187E613F277ADD04008D01B6 /* XSearchDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E613E277ADD04008D01B6 /* XSearchDBTool.m */; };
@@ -130,8 +133,12 @@
 		1845770B27BBCF1900B254C7 /* XThirdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XThirdVC.xib; sourceTree = "<group>"; };
 		1846696F278527E50013A769 /* XDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDemoVC.h; sourceTree = "<group>"; };
 		18466970278527E50013A769 /* XDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDemoVC.m; sourceTree = "<group>"; };
+		18512A2F27D9916800E55641 /* 01foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 01foods.plist; sourceTree = "<group>"; };
 		186D73CC27D4AA8B00D3C102 /* UIButton+XExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+XExtension.h"; sourceTree = "<group>"; };
 		186D73CD27D4AA8B00D3C102 /* UIButton+XExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XExtension.m"; sourceTree = "<group>"; };
+		187A8CDD27D8DAF900F7986E /* XRandomPickFoof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XRandomPickFoof.h; sourceTree = "<group>"; };
+		187A8CDE27D8DAF900F7986E /* XRandomPickFoof.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XRandomPickFoof.m; sourceTree = "<group>"; };
+		187A8CDF27D8DAF900F7986E /* XRandomPickFoof.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XRandomPickFoof.xib; sourceTree = "<group>"; };
 		187E6137277AAE0B008D01B6 /* XWeatherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWeatherModel.h; sourceTree = "<group>"; };
 		187E6138277AAE0B008D01B6 /* XWeatherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWeatherModel.m; sourceTree = "<group>"; };
 		187E613B277AAECF008D01B6 /* mapCode.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = mapCode.db; sourceTree = "<group>"; };
@@ -360,6 +367,7 @@
 		183FCEBB274CB68000E7964B /* component */ = {
 			isa = PBXGroup;
 			children = (
+				187A8CDC27D8DAA500F7986E /* 1RandomPickFood */,
 				183FCEBC274CB6B500E7964B /* Home */,
 				183FCEBE274CB6D500E7964B /* Weather */,
 				183FCEBD274CB6C800E7964B /* Discover */,
@@ -423,6 +431,16 @@
 			path = category;
 			sourceTree = "<group>";
 		};
+		187A8CDC27D8DAA500F7986E /* 1RandomPickFood */ = {
+			isa = PBXGroup;
+			children = (
+				187A8CDD27D8DAF900F7986E /* XRandomPickFoof.h */,
+				187A8CDE27D8DAF900F7986E /* XRandomPickFoof.m */,
+				187A8CDF27D8DAF900F7986E /* XRandomPickFoof.xib */,
+			);
+			path = 1RandomPickFood;
+			sourceTree = "<group>";
+		};
 		187E6133277AABED008D01B6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +457,7 @@
 		187E613A277AAEA0008D01B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				18512A2F27D9916800E55641 /* 01foods.plist */,
 				18CA83A8278C24A300678768 /* city.plist */,
 				187E613B277AAECF008D01B6 /* mapCode.db */,
 			);
@@ -631,11 +650,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				183FCE8E274C8D3F00E7964B /* LaunchScreen.storyboard in Resources */,
+				18512A3027D9916800E55641 /* 01foods.plist in Resources */,
 				181DBED527BCCF9B005D5EBB /* XDeleSecondVC.xib in Resources */,
 				183FCE8B274C8D3F00E7964B /* Assets.xcassets in Resources */,
 				1845770D27BBCF1900B254C7 /* XThirdVC.xib in Resources */,
 				18CA83A9278C24A300678768 /* city.plist in Resources */,
 				181DBED027BCCF7B005D5EBB /* XDeleFirstVC.xib in Resources */,
+				187A8CE127D8DAF900F7986E /* XRandomPickFoof.xib in Resources */,
 				1845770827BBBF9600B254C7 /* XSecondVC.xib in Resources */,
 				183FCE89274C8D3B00E7964B /* Main.storyboard in Resources */,
 				187E613C277AAECF008D01B6 /* mapCode.db in Resources */,
@@ -777,6 +798,7 @@
 				189C48C9274F897B003A5203 /* X5Controller.m in Sources */,
 				18D398EF27770D1A00B24617 /* Xstatus.m in Sources */,
 				183FCE80274C8D3B00E7964B /* AppDelegate.m in Sources */,
+				187A8CE027D8DAF900F7986E /* XRandomPickFoof.m in Sources */,
 				182D675D2750BAAF001411AA /* XHomeableViewController.m in Sources */,
 				181DBED427BCCF9B005D5EBB /* XDeleSecondVC.m in Sources */,
 				187E613F277ADD04008D01B6 /* XSearchDBTool.m in Sources */,
