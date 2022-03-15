@@ -60,6 +60,9 @@
 		18D398EB277707CA00B24617 /* XWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D398EA277707CA00B24617 /* XWeather.m */; };
 		18D398EF27770D1A00B24617 /* Xstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D398EE27770D1A00B24617 /* Xstatus.m */; };
 		18DA95FD277D9E78006EA15B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DA95FC277D9E78006EA15B /* CoreLocation.framework */; };
+		18EFE40127E0B50C008F9458 /* XNotificationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40027E0B50C008F9458 /* XNotificationSender.m */; };
+		18EFE40427E0B52D008F9458 /* XNotificationLister.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40327E0B52D008F9458 /* XNotificationLister.m */; };
+		18EFE40727E0B680008F9458 /* XNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40627E0B680008F9458 /* XNotification.m */; };
 		F49F64E925E5C5864BF3D5A7 /* Pods_UILearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C4056681A7530EE561D493 /* Pods_UILearn.framework */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +179,12 @@
 		18D398ED27770D1A00B24617 /* Xstatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xstatus.h; sourceTree = "<group>"; };
 		18D398EE27770D1A00B24617 /* Xstatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Xstatus.m; sourceTree = "<group>"; };
 		18DA95FC277D9E78006EA15B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18EFE3FF27E0B50C008F9458 /* XNotificationSender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNotificationSender.h; sourceTree = "<group>"; };
+		18EFE40027E0B50C008F9458 /* XNotificationSender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNotificationSender.m; sourceTree = "<group>"; };
+		18EFE40227E0B52D008F9458 /* XNotificationLister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNotificationLister.h; sourceTree = "<group>"; };
+		18EFE40327E0B52D008F9458 /* XNotificationLister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNotificationLister.m; sourceTree = "<group>"; };
+		18EFE40527E0B680008F9458 /* XNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNotification.h; sourceTree = "<group>"; };
+		18EFE40627E0B680008F9458 /* XNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNotification.m; sourceTree = "<group>"; };
 		18F8DD302754660B007BDE85 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
 		1C730BFEC1173CAF2D9BB8CF /* Pods-UILearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILearn.release.xcconfig"; path = "Target Support Files/Pods-UILearn/Pods-UILearn.release.xcconfig"; sourceTree = "<group>"; };
 		2F9E5044A6A43DA0DE920B07 /* Pods_UILearn_UILearnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UILearn_UILearnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,11 +376,12 @@
 		183FCEBB274CB68000E7964B /* component */ = {
 			isa = PBXGroup;
 			children = (
-				187A8CDC27D8DAA500F7986E /* 1RandomPickFood */,
-				183FCEBC274CB6B500E7964B /* Home */,
-				183FCEBE274CB6D500E7964B /* Weather */,
 				183FCEBD274CB6C800E7964B /* Discover */,
+				183FCEBC274CB6B500E7964B /* Home */,
+				18EFE3FE27E0B4C8008F9458 /* Notification */,
 				183FCEBF274CB6E000E7964B /* profile */,
+				187A8CDC27D8DAA500F7986E /* RandomPickFood */,
+				183FCEBE274CB6D500E7964B /* Weather */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -431,14 +441,14 @@
 			path = category;
 			sourceTree = "<group>";
 		};
-		187A8CDC27D8DAA500F7986E /* 1RandomPickFood */ = {
+		187A8CDC27D8DAA500F7986E /* RandomPickFood */ = {
 			isa = PBXGroup;
 			children = (
 				187A8CDD27D8DAF900F7986E /* XRandomPickFoof.h */,
 				187A8CDE27D8DAF900F7986E /* XRandomPickFoof.m */,
 				187A8CDF27D8DAF900F7986E /* XRandomPickFoof.xib */,
 			);
-			path = 1RandomPickFood;
+			path = RandomPickFood;
 			sourceTree = "<group>";
 		};
 		187E6133277AABED008D01B6 /* Controller */ = {
@@ -515,6 +525,19 @@
 				187E6138277AAE0B008D01B6 /* XWeatherModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		18EFE3FE27E0B4C8008F9458 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				18EFE3FF27E0B50C008F9458 /* XNotificationSender.h */,
+				18EFE40027E0B50C008F9458 /* XNotificationSender.m */,
+				18EFE40227E0B52D008F9458 /* XNotificationLister.h */,
+				18EFE40327E0B52D008F9458 /* XNotificationLister.m */,
+				18EFE40527E0B680008F9458 /* XNotification.h */,
+				18EFE40627E0B680008F9458 /* XNotification.m */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		1C86BFD7F16CA6764E8918D9 /* Frameworks */ = {
@@ -799,10 +822,12 @@
 				18D398EF27770D1A00B24617 /* Xstatus.m in Sources */,
 				183FCE80274C8D3B00E7964B /* AppDelegate.m in Sources */,
 				187A8CE027D8DAF900F7986E /* XRandomPickFoof.m in Sources */,
+				18EFE40127E0B50C008F9458 /* XNotificationSender.m in Sources */,
 				182D675D2750BAAF001411AA /* XHomeableViewController.m in Sources */,
 				181DBED427BCCF9B005D5EBB /* XDeleSecondVC.m in Sources */,
 				187E613F277ADD04008D01B6 /* XSearchDBTool.m in Sources */,
 				18D398EB277707CA00B24617 /* XWeather.m in Sources */,
+				18EFE40427E0B52D008F9458 /* XNotificationLister.m in Sources */,
 				183FCEB6274C947E00E7964B /* NavigationController.m in Sources */,
 				183FCEC5274CB78C00E7964B /* XDiscoverController.m in Sources */,
 				187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */,
@@ -810,6 +835,7 @@
 				183FCEC2274CB77300E7964B /* XHomeController.m in Sources */,
 				1845770C27BBCF1900B254C7 /* XThirdVC.m in Sources */,
 				182D67592750B9C7001411AA /* XHomeCell.m in Sources */,
+				18EFE40727E0B680008F9458 /* XNotification.m in Sources */,
 				1894489F278448B20051148F /* XWeatherHome.m in Sources */,
 				183FCECB274CB7AF00E7964B /* XProfileController.m in Sources */,
 				189C48C3274F86D0003A5203 /* X3Controller.m in Sources */,
