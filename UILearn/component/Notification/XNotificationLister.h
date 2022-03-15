@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface XNotificationLister : NSObject
 //通知监听者名称
 @property (nonatomic, copy) NSString *name;
+
+- (void)mm;
 @end
 
 NS_ASSUME_NONNULL_END

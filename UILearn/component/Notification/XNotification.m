@@ -16,17 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    创建一个通知发布者
+    XNotificationSender *sender = [[XNotificationSender alloc] init];
+    
+//    创建一个通知监听者
+    XNotificationLister *lister = [[XNotificationLister alloc] init];
+    
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    
+    [notificationCenter addObserver:lister selector:@selector(mm) name:@"tzname" object:sender];
+    
+    
+    [notificationCenter postNotificationName:@"tzname" object:sender userInfo:@{@"title":@"hhhhhhhhh",@"content":@"wuwuwuuuwuwu"}];
+    
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
