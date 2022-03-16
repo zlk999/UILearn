@@ -16,6 +16,7 @@
 #import "XImagePickCV.h"
 //#import "XTabBar.h"
 #import "XRandomPickFoof.h"
+#import "XNotification.h"
 
 @interface TabBarController ()
 @property (nonatomic, strong) NSMutableArray *items;
@@ -101,7 +102,7 @@
     [self setUpOneChildVcWithVc:logVC Image:@"tab_find_ unselected" selectedImage:@"tab_find_ selected" title:@"发现"];
 //    logVC.tabBarItem.badgeValue = @"消息";
     
-    XRandomPickFoof *Lock = [XRandomPickFoof new];
+    XNotification *Lock = [XNotification new];
     [self setUpOneChildVcWithVc:Lock Image:@"tab_my_ unselected" selectedImage:@"tab_my_ selected" title:@"我的"];
 }
 

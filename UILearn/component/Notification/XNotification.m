@@ -29,6 +29,7 @@
     
     [notificationCenter postNotificationName:@"tzname" object:sender userInfo:@{@"title":@"hhhhhhhhh",@"content":@"wuwuwuuuwuwu"}];
     
+    self.view.backgroundColor = [UIColor redColor];
     
 }
 
