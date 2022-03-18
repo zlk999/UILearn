@@ -18,6 +18,8 @@
 #import "XRandomPickFoof.h"
 #import "XNotification.h"
 
+#import "QQListVC.h"
+
 @interface TabBarController ()
 @property (nonatomic, strong) NSMutableArray *items;
 @end
@@ -90,7 +92,7 @@
 
 - (void)setUpAllChildVc{
     
-    XHomeController *home = [XHomeController new];
+    QQListVC *home = [QQListVC new];
     [self setUpOneChildVcWithVc:home Image:@"tab_home_ unselected" selectedImage:@"tab_home_ selected" title:@"主页"];
 
     XWeatherHome *SearVC = [XWeatherHome new];
@@ -102,7 +104,7 @@
     [self setUpOneChildVcWithVc:logVC Image:@"tab_find_ unselected" selectedImage:@"tab_find_ selected" title:@"发现"];
 //    logVC.tabBarItem.badgeValue = @"消息";
     
-    XNotification *Lock = [XNotification new];
+    XDiscoverController *Lock = [XDiscoverController new];
     [self setUpOneChildVcWithVc:Lock Image:@"tab_my_ unselected" selectedImage:@"tab_my_ selected" title:@"我的"];
 }
 

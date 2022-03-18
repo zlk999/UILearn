@@ -45,6 +45,11 @@
 		187E613F277ADD04008D01B6 /* XSearchDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E613E277ADD04008D01B6 /* XSearchDBTool.m */; };
 		187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E6141277AE99D008D01B6 /* XDownWeatherInfo.m */; };
 		1889AD2027D1AC8700906A10 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1889AD1E27D1AC8700906A10 /* Model.xcdatamodeld */; };
+		18925EC327E2198E00FE73AA /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18925EC227E2198E00FE73AA /* friends.plist */; };
+		18925ECB27E21A0B00FE73AA /* QQListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18925EC927E21A0B00FE73AA /* QQListVC.m */; };
+		18925ECC27E21A0B00FE73AA /* QQListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18925ECA27E21A0B00FE73AA /* QQListVC.xib */; };
+		18925ECF27E21A6A00FE73AA /* friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 18925ECE27E21A6A00FE73AA /* friend.m */; };
+		18925ED227E21BF400FE73AA /* groups.m in Sources */ = {isa = PBXBuildFile; fileRef = 18925ED127E21BF400FE73AA /* groups.m */; };
 		1894489927840EA50051148F /* XVCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894489827840EA50051148F /* XVCTools.m */; };
 		1894489F278448B20051148F /* XWeatherHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894489E278448B20051148F /* XWeatherHome.m */; };
 		189C48BA274F1C85003A5203 /* XTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C48B9274F1C85003A5203 /* XTabBar.m */; };
@@ -63,6 +68,8 @@
 		18EFE40127E0B50C008F9458 /* XNotificationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40027E0B50C008F9458 /* XNotificationSender.m */; };
 		18EFE40427E0B52D008F9458 /* XNotificationLister.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40327E0B52D008F9458 /* XNotificationLister.m */; };
 		18EFE40727E0B680008F9458 /* XNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40627E0B680008F9458 /* XNotification.m */; };
+		18FE26A927E46F0E004D181F /* QQListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE26A727E46F0E004D181F /* QQListCell.m */; };
+		18FE26AA27E46F0E004D181F /* QQListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FE26A827E46F0E004D181F /* QQListCell.xib */; };
 		F49F64E925E5C5864BF3D5A7 /* Pods_UILearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C4056681A7530EE561D493 /* Pods_UILearn.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +157,14 @@
 		187E6140277AE99D008D01B6 /* XDownWeatherInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDownWeatherInfo.h; sourceTree = "<group>"; };
 		187E6141277AE99D008D01B6 /* XDownWeatherInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDownWeatherInfo.m; sourceTree = "<group>"; };
 		1889AD1F27D1AC8700906A10 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		18925EC227E2198E00FE73AA /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		18925EC827E21A0B00FE73AA /* QQListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQListVC.h; sourceTree = "<group>"; };
+		18925EC927E21A0B00FE73AA /* QQListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQListVC.m; sourceTree = "<group>"; };
+		18925ECA27E21A0B00FE73AA /* QQListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQListVC.xib; sourceTree = "<group>"; };
+		18925ECD27E21A6A00FE73AA /* friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = friend.h; sourceTree = "<group>"; };
+		18925ECE27E21A6A00FE73AA /* friend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = friend.m; sourceTree = "<group>"; };
+		18925ED027E21BF400FE73AA /* groups.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = groups.h; sourceTree = "<group>"; };
+		18925ED127E21BF400FE73AA /* groups.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = groups.m; sourceTree = "<group>"; };
 		1894489727840EA50051148F /* XVCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XVCTools.h; sourceTree = "<group>"; };
 		1894489827840EA50051148F /* XVCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XVCTools.m; sourceTree = "<group>"; };
 		1894489D278448B20051148F /* XWeatherHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWeatherHome.h; sourceTree = "<group>"; };
@@ -186,6 +201,9 @@
 		18EFE40527E0B680008F9458 /* XNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNotification.h; sourceTree = "<group>"; };
 		18EFE40627E0B680008F9458 /* XNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNotification.m; sourceTree = "<group>"; };
 		18F8DD302754660B007BDE85 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		18FE26A627E46F0E004D181F /* QQListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQListCell.h; sourceTree = "<group>"; };
+		18FE26A727E46F0E004D181F /* QQListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQListCell.m; sourceTree = "<group>"; };
+		18FE26A827E46F0E004D181F /* QQListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQListCell.xib; sourceTree = "<group>"; };
 		1C730BFEC1173CAF2D9BB8CF /* Pods-UILearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILearn.release.xcconfig"; path = "Target Support Files/Pods-UILearn/Pods-UILearn.release.xcconfig"; sourceTree = "<group>"; };
 		2F9E5044A6A43DA0DE920B07 /* Pods_UILearn_UILearnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UILearn_UILearnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		453DA9C3AA1560E3700502A8 /* Pods-UILearnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILearnTests.release.xcconfig"; path = "Target Support Files/Pods-UILearnTests/Pods-UILearnTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -376,10 +394,13 @@
 		183FCEBB274CB68000E7964B /* component */ = {
 			isa = PBXGroup;
 			children = (
+				181DBED727BCD05A005D5EBB /* Delegate */,
+				181DBED627BCD04B005D5EBB /* Block */,
 				183FCEBD274CB6C800E7964B /* Discover */,
 				183FCEBC274CB6B500E7964B /* Home */,
 				18EFE3FE27E0B4C8008F9458 /* Notification */,
 				183FCEBF274CB6E000E7964B /* profile */,
+				18925EC427E219A400FE73AA /* QQList */,
 				187A8CDC27D8DAA500F7986E /* RandomPickFood */,
 				183FCEBE274CB6D500E7964B /* Weather */,
 			);
@@ -399,8 +420,6 @@
 		183FCEBD274CB6C800E7964B /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				181DBED727BCD05A005D5EBB /* Delegate */,
-				181DBED627BCD04B005D5EBB /* Block */,
 				183FCEC3274CB78C00E7964B /* XDiscoverController.h */,
 				183FCEC4274CB78C00E7964B /* XDiscoverController.m */,
 			);
@@ -468,6 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				18512A2F27D9916800E55641 /* 01foods.plist */,
+				18925EC227E2198E00FE73AA /* friends.plist */,
 				18CA83A8278C24A300678768 /* city.plist */,
 				187E613B277AAECF008D01B6 /* mapCode.db */,
 			);
@@ -479,6 +499,47 @@
 			children = (
 			);
 			path = magicalRecord;
+			sourceTree = "<group>";
+		};
+		18925EC427E219A400FE73AA /* QQList */ = {
+			isa = PBXGroup;
+			children = (
+				18925EC627E219BA00FE73AA /* Controller */,
+				18925EC527E219B200FE73AA /* Model */,
+				18925EC727E219C800FE73AA /* View */,
+			);
+			path = QQList;
+			sourceTree = "<group>";
+		};
+		18925EC527E219B200FE73AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18925ECD27E21A6A00FE73AA /* friend.h */,
+				18925ECE27E21A6A00FE73AA /* friend.m */,
+				18925ED027E21BF400FE73AA /* groups.h */,
+				18925ED127E21BF400FE73AA /* groups.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18925EC627E219BA00FE73AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18925EC827E21A0B00FE73AA /* QQListVC.h */,
+				18925EC927E21A0B00FE73AA /* QQListVC.m */,
+				18925ECA27E21A0B00FE73AA /* QQListVC.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		18925EC727E219C800FE73AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18FE26A627E46F0E004D181F /* QQListCell.h */,
+				18FE26A727E46F0E004D181F /* QQListCell.m */,
+				18FE26A827E46F0E004D181F /* QQListCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		189C48BB274F1CEE003A5203 /* BaseView */ = {
@@ -631,7 +692,7 @@
 		183FCE73274C8D3B00E7964B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = X;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					183FCE7A274C8D3B00E7964B = {
@@ -672,13 +733,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18925ECC27E21A0B00FE73AA /* QQListVC.xib in Resources */,
 				183FCE8E274C8D3F00E7964B /* LaunchScreen.storyboard in Resources */,
 				18512A3027D9916800E55641 /* 01foods.plist in Resources */,
+				18925EC327E2198E00FE73AA /* friends.plist in Resources */,
 				181DBED527BCCF9B005D5EBB /* XDeleSecondVC.xib in Resources */,
 				183FCE8B274C8D3F00E7964B /* Assets.xcassets in Resources */,
 				1845770D27BBCF1900B254C7 /* XThirdVC.xib in Resources */,
 				18CA83A9278C24A300678768 /* city.plist in Resources */,
 				181DBED027BCCF7B005D5EBB /* XDeleFirstVC.xib in Resources */,
+				18FE26AA27E46F0E004D181F /* QQListCell.xib in Resources */,
 				187A8CE127D8DAF900F7986E /* XRandomPickFoof.xib in Resources */,
 				1845770827BBBF9600B254C7 /* XSecondVC.xib in Resources */,
 				183FCE89274C8D3B00E7964B /* Main.storyboard in Resources */,
@@ -819,8 +883,10 @@
 				186D73CE27D4AA8B00D3C102 /* UIButton+XExtension.m in Sources */,
 				183FCE86274C8D3B00E7964B /* ViewController.m in Sources */,
 				189C48C9274F897B003A5203 /* X5Controller.m in Sources */,
+				18FE26A927E46F0E004D181F /* QQListCell.m in Sources */,
 				18D398EF27770D1A00B24617 /* Xstatus.m in Sources */,
 				183FCE80274C8D3B00E7964B /* AppDelegate.m in Sources */,
+				18925ECF27E21A6A00FE73AA /* friend.m in Sources */,
 				187A8CE027D8DAF900F7986E /* XRandomPickFoof.m in Sources */,
 				18EFE40127E0B50C008F9458 /* XNotificationSender.m in Sources */,
 				182D675D2750BAAF001411AA /* XHomeableViewController.m in Sources */,
@@ -830,11 +896,13 @@
 				18EFE40427E0B52D008F9458 /* XNotificationLister.m in Sources */,
 				183FCEB6274C947E00E7964B /* NavigationController.m in Sources */,
 				183FCEC5274CB78C00E7964B /* XDiscoverController.m in Sources */,
+				18925ECB27E21A0B00FE73AA /* QQListVC.m in Sources */,
 				187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */,
 				1889AD2027D1AC8700906A10 /* Model.xcdatamodeld in Sources */,
 				183FCEC2274CB77300E7964B /* XHomeController.m in Sources */,
 				1845770C27BBCF1900B254C7 /* XThirdVC.m in Sources */,
 				182D67592750B9C7001411AA /* XHomeCell.m in Sources */,
+				18925ED227E21BF400FE73AA /* groups.m in Sources */,
 				18EFE40727E0B680008F9458 /* XNotification.m in Sources */,
 				1894489F278448B20051148F /* XWeatherHome.m in Sources */,
 				183FCECB274CB7AF00E7964B /* XProfileController.m in Sources */,

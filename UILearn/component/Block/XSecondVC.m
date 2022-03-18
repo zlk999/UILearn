@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbl;
 - (IBAction)Btn:(UIButton *)sender;
 
-
+@property(nonatomic, strong) XThirdVC *vc;
 @end
 
 @implementation XSecondVC
@@ -22,20 +22,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-   
-
+    self.vc =[XThirdVC new];
+    
+    self.vc.SendMsg = ^(NSString * _Nonnull txt) {
+        
+        self.lbl.text = txt;
+    };
 }
 
 
 
 
 - (IBAction)Btn:(UIButton *)sender {
-    XThirdVC *vc = [XThirdVC new];
-    
-    vc.SendMsg = ^(NSString * _Nonnull txt) {
-        self.lbl.text = txt;
-    };
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:self.vc animated:YES];
     
 }
 @end

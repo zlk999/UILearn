@@ -44,11 +44,11 @@
 
 
 
-#define topLayout      (IS_X?88:64)
-#define StateBarHeight  (IS_X?44:20)
-#define SafeBottom  (IS_X?34:0)
+#define topLayout      (IS_X?88:64)  //导航栏
+#define StateBarHeight  (IS_X?44:20)  //状态栏
+#define SafeBottom  (IS_X?34:0)  //小白条
 #define IS_IPHONEX  (IS_X?1:0)
-#define bottomLayout    (IS_X?83:49)
+#define bottomLayout    (IS_X?83:49)   //tabbar栏
 
 
 /** 最大内机 */
