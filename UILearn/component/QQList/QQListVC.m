@@ -21,6 +21,7 @@
 
 @implementation QQListVC
 
+#pragma mark - *********** 懒加载 ***********
 - (NSArray *)groups{
     if (_groups == nil) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"friends.plist" ofType:nil];
@@ -45,18 +46,22 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
+    self.tableView.sectionHeaderHeight = 44;
+    self.tableView.sectionFooterHeight = 0;
+    
     self.HeaderView.frame = CGRectMake(0, 0, Device_Width, 44);
     self.tableView.tableHeaderView = self.HeaderView;
 }
 
-#pragma mark - 代理
+#pragma mark - tableview数据源方法
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.groups.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
+    // 因为在这个方法中, 要根据当前组的状态（是否是展开）, 来设置不同的返回值
+    // 所以, 需要为CZGroup模型增加一个用来保存"是否展开"状态的属性
     groups *group = self.groups[section];
     if (group.isVisible) {
         return [group.friends count];
@@ -66,13 +71,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    // 1. 获取模型对象（数据）
     groups *agroup = self.groups[indexPath.section];
     friend *afriend = agroup.friends[indexPath.row];
+    // 2. 创建单元格(视图)
     QQListCell *cell = [QQListCell friendWithTableView:tableView];
+    // 3. 设置单元格数据(把模型设置给单元格)
     cell.friendModel = afriend;
+    // 4. 返回单元格
     return cell;
 }
-
+//// 设置每一组的组标题(下面的这个方法只能设置每一组的组标题字符串, 但是我们要的是每一组中还包含其他子控件)
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    CZGroup *group = self.groups[section];
+//    return group.name;
+//}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -84,6 +98,7 @@
 
     // 2. 创建UITableViewHeaderFooterView
     CZGroupHeaderView *headerVw = [CZGroupHeaderView CZGroupHeaderViewWithHeaderView:tableView];
+    headerVw.frame = CGRectMake(0, 0, tableView.bounds.size.width, 30);
     headerVw.tag = section;
     
     // 3. 设置数据
@@ -100,14 +115,26 @@
     return headerVw;
 }
 
+#pragma mark - *********** 隐藏状态栏 ***********
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+
 #pragma mark - *********** CZGroupHeaderViewDelegate的代理方法 ***********
 - (void)groupHeaderViewDidClickTitleButton:(CZGroupHeaderView *)groupHeaderView{
+    // 刷新table view
+    //[self.tableView reloadData];
     
+    // 局部刷新(只刷新某个组)
+    // 创建一个用来表示某个组的对象
     NSIndexSet *idxSet = [NSIndexSet indexSetWithIndex:groupHeaderView.tag];
+    
     if (self.tableView.style == UITableViewStyleGrouped && groupHeaderView.tag == 0) {
         groupHeaderView.groupModel = self.groups[groupHeaderView.tag];
     }
-    [self.tableView reloadSections:idxSet withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableView reloadSections:idxSet withRowAnimation:UITableViewRowAnimationTop];
 }
 
 @end
