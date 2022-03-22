@@ -37,6 +37,7 @@
 		1845770D27BBCF1900B254C7 /* XThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1845770B27BBCF1900B254C7 /* XThirdVC.xib */; };
 		18466971278527E50013A769 /* XDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18466970278527E50013A769 /* XDemoVC.m */; };
 		18512A3027D9916800E55641 /* 01foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18512A2F27D9916800E55641 /* 01foods.plist */; };
+		1860F0DA27E89A930081DC3A /* CZGroupHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860F0D927E89A930081DC3A /* CZGroupHeaderView.m */; };
 		186D73CE27D4AA8B00D3C102 /* UIButton+XExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D73CD27D4AA8B00D3C102 /* UIButton+XExtension.m */; };
 		187A8CE027D8DAF900F7986E /* XRandomPickFoof.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A8CDE27D8DAF900F7986E /* XRandomPickFoof.m */; };
 		187A8CE127D8DAF900F7986E /* XRandomPickFoof.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187A8CDF27D8DAF900F7986E /* XRandomPickFoof.xib */; };
@@ -144,6 +145,8 @@
 		1846696F278527E50013A769 /* XDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDemoVC.h; sourceTree = "<group>"; };
 		18466970278527E50013A769 /* XDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDemoVC.m; sourceTree = "<group>"; };
 		18512A2F27D9916800E55641 /* 01foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 01foods.plist; sourceTree = "<group>"; };
+		1860F0D827E89A930081DC3A /* CZGroupHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZGroupHeaderView.h; sourceTree = "<group>"; };
+		1860F0D927E89A930081DC3A /* CZGroupHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZGroupHeaderView.m; sourceTree = "<group>"; };
 		186D73CC27D4AA8B00D3C102 /* UIButton+XExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+XExtension.h"; sourceTree = "<group>"; };
 		186D73CD27D4AA8B00D3C102 /* UIButton+XExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XExtension.m"; sourceTree = "<group>"; };
 		187A8CDD27D8DAF900F7986E /* XRandomPickFoof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XRandomPickFoof.h; sourceTree = "<group>"; };
@@ -538,6 +541,8 @@
 				18FE26A627E46F0E004D181F /* QQListCell.h */,
 				18FE26A727E46F0E004D181F /* QQListCell.m */,
 				18FE26A827E46F0E004D181F /* QQListCell.xib */,
+				1860F0D827E89A930081DC3A /* CZGroupHeaderView.h */,
+				1860F0D927E89A930081DC3A /* CZGroupHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -900,6 +905,7 @@
 				187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */,
 				1889AD2027D1AC8700906A10 /* Model.xcdatamodeld in Sources */,
 				183FCEC2274CB77300E7964B /* XHomeController.m in Sources */,
+				1860F0DA27E89A930081DC3A /* CZGroupHeaderView.m in Sources */,
 				1845770C27BBCF1900B254C7 /* XThirdVC.m in Sources */,
 				182D67592750B9C7001411AA /* XHomeCell.m in Sources */,
 				18925ED227E21BF400FE73AA /* groups.m in Sources */,
