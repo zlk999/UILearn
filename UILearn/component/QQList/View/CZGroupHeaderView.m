@@ -32,7 +32,21 @@
          UIButton *btnGroupTitle = [[UIButton alloc] init];
         [btnGroupTitle setImage:[UIImage imageNamed:@"buddy_header_arrow"] forState:UIControlStateNormal];
         [btnGroupTitle setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [btnGroupTitle setBackgroundImage:[UIImage imageNamed:@"buddy_header_bg"] forState:UIControlStateNormal];
+        // 设置按钮高亮的背景图片和高亮时的背景图片
+        [btnGroupTitle setBackgroundImage:[UIImage imageNamed:@"buddy_header_bg_highlighted"] forState:UIControlStateHighlighted];
         
+        btnGroupTitle.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        // 设置按钮的内容的内边距
+        btnGroupTitle.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+        // 设置按钮标题距离左边的边距
+        btnGroupTitle.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0);
+        
+        [btnGroupTitle addTarget:self action:@selector(btnGroupTitleClicked) forControlEvents:UIControlEventTouchUpInside];
+        
+        btnGroupTitle.imageView.contentMode = UIViewContentModeCenter;
+        
+        btnGroupTitle.imageView.clipsToBounds = NO;
         
         [self.contentView addSubview:btnGroupTitle];
         self.btnGroupTitle = btnGroupTitle;
@@ -46,12 +60,27 @@
     return self;
 }
 
+- (void)btnGroupTitleClicked{
+    self.groupModel.visible = !self.groupModel.isVisible;
+    
+    if ([self.delegate respondsToSelector:@selector(groupHeaderViewDidClickTitleButton:)]) {
+        [self.delegate groupHeaderViewDidClickTitleButton:self];
+    }
+}
+
 
 - (void)setGroupModel:(groups *)groupModel{
     
     _groupModel = groupModel;
     [self.btnGroupTitle setTitle:groupModel.name forState:UIControlStateNormal];
     self.lblCount.text =[ NSString stringWithFormat:@"%d / %zd",groupModel.online ,groupModel.friends.count ];
+    
+    if (self.groupModel.isVisible) {
+        self.btnGroupTitle.imageView.transform = CGAffineTransformMakeRotation(M_PI_2);
+    } else {
+        self.btnGroupTitle.imageView.transform = CGAffineTransformMakeRotation(0);
+    }
+    
 
 }
 

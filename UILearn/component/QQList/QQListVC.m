@@ -11,7 +11,7 @@
 #import "QQListCell.h"
 #import "CZGroupHeaderView.h"
 
-@interface QQListVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface QQListVC ()<UITableViewDelegate,UITableViewDataSource, CZGroupHeaderViewDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) CZGroupHeaderView *HeaderView;
 //获取plist文件数组
@@ -58,11 +58,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     groups *group = self.groups[section];
-//    if (group.isVisible) {
+    if (group.isVisible) {
         return [group.friends count];
-//    }else{
-//        return 0;
-//    }
+    }else{
+        return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -84,13 +84,13 @@
 
     // 2. 创建UITableViewHeaderFooterView
     CZGroupHeaderView *headerVw = [CZGroupHeaderView CZGroupHeaderViewWithHeaderView:tableView];
-//    headerVw.tag = section;
+    headerVw.tag = section;
     
     // 3. 设置数据
     headerVw.groupModel = group;
     
     // 设置headerView的代理为当前控制器
-//    headerVw.delegate = self;
+    headerVw.delegate = self;
     
     
     // 在刚刚创建好的header view中获取的header view的frame都是0, 因为刚刚创建好的header view我们没有为其frame赋值, 所以frame都是 0
@@ -101,6 +101,13 @@
 }
 
 #pragma mark - *********** CZGroupHeaderViewDelegate的代理方法 ***********
-
+- (void)groupHeaderViewDidClickTitleButton:(CZGroupHeaderView *)groupHeaderView{
+    
+    NSIndexSet *idxSet = [NSIndexSet indexSetWithIndex:groupHeaderView.tag];
+    if (self.tableView.style == UITableViewStyleGrouped && groupHeaderView.tag == 0) {
+        groupHeaderView.groupModel = self.groups[groupHeaderView.tag];
+    }
+    [self.tableView reloadSections:idxSet withRowAnimation:UITableViewRowAnimationFade];
+}
 
 @end
