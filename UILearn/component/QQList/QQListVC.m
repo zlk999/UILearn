@@ -45,14 +45,8 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
-
-    
-    if (self.tableView.style == UITableViewStyleGrouped) {
-        self.HeaderView = (CZGroupHeaderView *)[self tableView:nil viewForHeaderInSection:0];
-        self.HeaderView.frame = CGRectMake(0, 0, self.view.frame.size.width, 44);
-        self.tableView.tableHeaderView = self.HeaderView;
-    }
- 
+    self.HeaderView.frame = CGRectMake(0, 0, Device_Width, 44);
+    self.tableView.tableHeaderView = self.HeaderView;
 }
 
 #pragma mark - 代理
@@ -64,7 +58,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     groups *group = self.groups[section];
-    return [group.friends count];
+    if (group.isVisible) {
+        return [group.friends count];
+    }else{
+        return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
