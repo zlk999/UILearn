@@ -9,21 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class CZGroupHeaderView;
-@protocol CZGroupHeaderViewDelegate <NSObject>
 
-- (void)groupHeaderViewDidClickTitleButton:(CZGroupHeaderView *)groupHeaderView;
-
-@end
 
 @class groups;
 @interface CZGroupHeaderView : UITableViewHeaderFooterView
 
-@property(strong, nonatomic) groups *group;
++ (instancetype)CZGroupHeaderViewWithHeaderView:(UITableView *) tableView;
 
-+ (instancetype)groupHeaderViewWithTableView:(UITableView *)tableView;
-
-@property(nonatomic, weak) id<CZGroupHeaderViewDelegate> delegate;
+@property(nonatomic, strong) groups *groupModel;
 
 @end
 

@@ -8,15 +8,16 @@
 #import "friend.h"
 
 @implementation friend
-- (instancetype)initWithDic:(NSDictionary *)dic{
+
+- (instancetype)initWithDic:(NSDictionary *)Dic{
     if (self = [super init]) {
-        [self setValuesForKeysWithDictionary:dic];
+        [self setValuesForKeysWithDictionary:Dic];
     }
     return self;
 }
 
-+ (instancetype)friendWithDic:(NSDictionary *)dic{
-    return [[self alloc] initWithDic:dic];
++ (instancetype)friendWithDic:(NSDictionary *)Dic{
+    return [[self alloc] initWithDic:Dic];
 }
 
 @end

@@ -19,9 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 //是否是VIP
 @property (nonatomic, assign, getter = isVip) BOOL vip;
 
-- (instancetype)initWithDic:(NSDictionary *) dic;
+- (instancetype)initWithDic:(NSDictionary *)Dic;
 
-+ (instancetype)friendWithDic:(NSDictionary *) dic;
++ (instancetype)friendWithDic:(NSDictionary *)Dic;
+
 @end
 
 NS_ASSUME_NONNULL_END

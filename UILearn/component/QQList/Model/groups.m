@@ -10,22 +10,23 @@
 
 @implementation groups
 
-- (instancetype)initWithDic:(NSDictionary *)dic{
+- (instancetype)initWithDic:(NSDictionary *)Dic{
     if (self = [super init]) {
-        [self setValuesForKeysWithDictionary:dic];
+        [self setValuesForKeysWithDictionary:Dic];
         
-        NSMutableArray *arrayModels = [NSMutableArray array];
-        for (NSDictionary *sub_dic in self.friends) {
-            friend *model = [friend friendWithDic:sub_dic];
-            [arrayModels addObject:model];
+        NSMutableArray *arrarModel = [NSMutableArray new];
+        for (NSDictionary *subDic in self.friends) {
+            friend *friendModel = [friend friendWithDic:subDic];
+            [arrarModel addObject:friendModel];
         }
-        self.friends = arrayModels;
+        self.friends  = arrarModel;
     }
     return self;
 }
 
-+ (instancetype)groupWithDic:(NSDictionary *)dic{
-    return [[self alloc] initWithDic:dic];
++ (instancetype)groupsWithDic:(NSDictionary *)Dic{
+    return [[self alloc] initWithDic:Dic];
 }
+
 
 @end

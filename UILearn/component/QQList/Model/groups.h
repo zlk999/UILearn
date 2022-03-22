@@ -11,14 +11,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface groups : NSObject
 
+//model属性
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) int online;
 @property (nonatomic, strong) NSArray *friends;
+
 // 表示这个组是否可见
 @property (nonatomic, assign, getter=isVisible) BOOL visible;
 
-- (instancetype)initWithDic:(NSDictionary *)dic;
-+ (instancetype)groupWithDic:(NSDictionary *)dic;
+- (instancetype)initWithDic:(NSDictionary *)Dic;
+
++ (instancetype)groupsWithDic:(NSDictionary *)Dic;
 
 @end
 
