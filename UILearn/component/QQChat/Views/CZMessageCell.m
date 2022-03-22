@@ -1,0 +1,23 @@
+//
+//  CZMessageCell.m
+//  UILearn
+//
+//  Created by apple on 2022/3/22.
+//
+
+#import "CZMessageCell.h"
+
+@implementation CZMessageCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end

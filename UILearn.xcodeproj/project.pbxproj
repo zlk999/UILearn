@@ -36,6 +36,12 @@
 		1845770C27BBCF1900B254C7 /* XThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845770A27BBCF1900B254C7 /* XThirdVC.m */; };
 		1845770D27BBCF1900B254C7 /* XThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1845770B27BBCF1900B254C7 /* XThirdVC.xib */; };
 		18466971278527E50013A769 /* XDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18466970278527E50013A769 /* XDemoVC.m */; };
+		184A888D27E9B064002A135A /* QQChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A888B27E9B064002A135A /* QQChat.m */; };
+		184A888E27E9B064002A135A /* QQChat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184A888C27E9B064002A135A /* QQChat.xib */; };
+		184A889127E9B095002A135A /* CZMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A889027E9B095002A135A /* CZMessageCell.m */; };
+		184A889427E9B0B0002A135A /* CZMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A889327E9B0B0002A135A /* CZMessage.m */; };
+		184A889727E9B0BF002A135A /* CZMessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A889627E9B0BF002A135A /* CZMessageFrame.m */; };
+		184A889927E9B406002A135A /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184A889827E9B406002A135A /* messages.plist */; };
 		18512A3027D9916800E55641 /* 01foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18512A2F27D9916800E55641 /* 01foods.plist */; };
 		1860F0DA27E89A930081DC3A /* CZGroupHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860F0D927E89A930081DC3A /* CZGroupHeaderView.m */; };
 		186D73CE27D4AA8B00D3C102 /* UIButton+XExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D73CD27D4AA8B00D3C102 /* UIButton+XExtension.m */; };
@@ -144,6 +150,16 @@
 		1845770B27BBCF1900B254C7 /* XThirdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XThirdVC.xib; sourceTree = "<group>"; };
 		1846696F278527E50013A769 /* XDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDemoVC.h; sourceTree = "<group>"; };
 		18466970278527E50013A769 /* XDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDemoVC.m; sourceTree = "<group>"; };
+		184A888A27E9B064002A135A /* QQChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQChat.h; sourceTree = "<group>"; };
+		184A888B27E9B064002A135A /* QQChat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQChat.m; sourceTree = "<group>"; };
+		184A888C27E9B064002A135A /* QQChat.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQChat.xib; sourceTree = "<group>"; };
+		184A888F27E9B095002A135A /* CZMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZMessageCell.h; sourceTree = "<group>"; };
+		184A889027E9B095002A135A /* CZMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZMessageCell.m; sourceTree = "<group>"; };
+		184A889227E9B0B0002A135A /* CZMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZMessage.h; sourceTree = "<group>"; };
+		184A889327E9B0B0002A135A /* CZMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZMessage.m; sourceTree = "<group>"; };
+		184A889527E9B0BF002A135A /* CZMessageFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZMessageFrame.h; sourceTree = "<group>"; };
+		184A889627E9B0BF002A135A /* CZMessageFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZMessageFrame.m; sourceTree = "<group>"; };
+		184A889827E9B406002A135A /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
 		18512A2F27D9916800E55641 /* 01foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 01foods.plist; sourceTree = "<group>"; };
 		1860F0D827E89A930081DC3A /* CZGroupHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZGroupHeaderView.h; sourceTree = "<group>"; };
 		1860F0D927E89A930081DC3A /* CZGroupHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZGroupHeaderView.m; sourceTree = "<group>"; };
@@ -397,8 +413,9 @@
 		183FCEBB274CB68000E7964B /* component */ = {
 			isa = PBXGroup;
 			children = (
-				181DBED727BCD05A005D5EBB /* Delegate */,
+				184A888627E9AF71002A135A /* QQChat */,
 				181DBED627BCD04B005D5EBB /* Block */,
+				181DBED727BCD05A005D5EBB /* Delegate */,
 				183FCEBD274CB6C800E7964B /* Discover */,
 				183FCEBC274CB6B500E7964B /* Home */,
 				18EFE3FE27E0B4C8008F9458 /* Notification */,
@@ -454,6 +471,46 @@
 			path = profile;
 			sourceTree = "<group>";
 		};
+		184A888627E9AF71002A135A /* QQChat */ = {
+			isa = PBXGroup;
+			children = (
+				184A888927E9AF95002A135A /* Controllers */,
+				184A888827E9AF90002A135A /* Views */,
+				184A888727E9AF81002A135A /* Models */,
+			);
+			path = QQChat;
+			sourceTree = "<group>";
+		};
+		184A888727E9AF81002A135A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				184A889227E9B0B0002A135A /* CZMessage.h */,
+				184A889327E9B0B0002A135A /* CZMessage.m */,
+				184A889527E9B0BF002A135A /* CZMessageFrame.h */,
+				184A889627E9B0BF002A135A /* CZMessageFrame.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		184A888827E9AF90002A135A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				184A888F27E9B095002A135A /* CZMessageCell.h */,
+				184A889027E9B095002A135A /* CZMessageCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		184A888927E9AF95002A135A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				184A888A27E9B064002A135A /* QQChat.h */,
+				184A888B27E9B064002A135A /* QQChat.m */,
+				184A888C27E9B064002A135A /* QQChat.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		186D73CB27D4AA5900D3C102 /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +546,7 @@
 		187E613A277AAEA0008D01B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				184A889827E9B406002A135A /* messages.plist */,
 				18512A2F27D9916800E55641 /* 01foods.plist */,
 				18925EC227E2198E00FE73AA /* friends.plist */,
 				18CA83A8278C24A300678768 /* city.plist */,
@@ -738,6 +796,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A889927E9B406002A135A /* messages.plist in Resources */,
 				18925ECC27E21A0B00FE73AA /* QQListVC.xib in Resources */,
 				183FCE8E274C8D3F00E7964B /* LaunchScreen.storyboard in Resources */,
 				18512A3027D9916800E55641 /* 01foods.plist in Resources */,
@@ -751,6 +810,7 @@
 				187A8CE127D8DAF900F7986E /* XRandomPickFoof.xib in Resources */,
 				1845770827BBBF9600B254C7 /* XSecondVC.xib in Resources */,
 				183FCE89274C8D3B00E7964B /* Main.storyboard in Resources */,
+				184A888E27E9B064002A135A /* QQChat.xib in Resources */,
 				187E613C277AAECF008D01B6 /* mapCode.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -901,11 +961,13 @@
 				18EFE40427E0B52D008F9458 /* XNotificationLister.m in Sources */,
 				183FCEB6274C947E00E7964B /* NavigationController.m in Sources */,
 				183FCEC5274CB78C00E7964B /* XDiscoverController.m in Sources */,
+				184A889127E9B095002A135A /* CZMessageCell.m in Sources */,
 				18925ECB27E21A0B00FE73AA /* QQListVC.m in Sources */,
 				187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */,
 				1889AD2027D1AC8700906A10 /* Model.xcdatamodeld in Sources */,
 				183FCEC2274CB77300E7964B /* XHomeController.m in Sources */,
 				1860F0DA27E89A930081DC3A /* CZGroupHeaderView.m in Sources */,
+				184A889727E9B0BF002A135A /* CZMessageFrame.m in Sources */,
 				1845770C27BBCF1900B254C7 /* XThirdVC.m in Sources */,
 				182D67592750B9C7001411AA /* XHomeCell.m in Sources */,
 				18925ED227E21BF400FE73AA /* groups.m in Sources */,
@@ -918,12 +980,14 @@
 				1894489927840EA50051148F /* XVCTools.m in Sources */,
 				189C48BA274F1C85003A5203 /* XTabBar.m in Sources */,
 				183FCEB9274C970700E7964B /* TabBarController.m in Sources */,
+				184A889427E9B0B0002A135A /* CZMessage.m in Sources */,
 				187E6139277AAE0B008D01B6 /* XWeatherModel.m in Sources */,
 				1845770727BBBF9600B254C7 /* XSecondVC.m in Sources */,
 				181DBECF27BCCF7B005D5EBB /* XDeleFirstVC.m in Sources */,
 				183FCE91274C8D3F00E7964B /* main.m in Sources */,
 				18CA83AC278ED48E00678768 /* XImagePickCV.m in Sources */,
 				183FCE83274C8D3B00E7964B /* SceneDelegate.m in Sources */,
+				184A888D27E9B064002A135A /* QQChat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
