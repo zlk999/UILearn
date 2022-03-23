@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 //枚举 消息的类型  表示是别人发送还是自己发送
 @property(nonatomic, assign) CZMessageType type;
 
+@property(assign, nonatomic) BOOL hideTime;
 - (instancetype)initWithDic:(NSDictionary *)dic;
 + (instancetype)CZMessageWithDic:(NSDictionary *)dic;
 

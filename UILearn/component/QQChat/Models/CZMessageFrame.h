@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#define textFont [UIFont systemFontOfSize:13]
+#define textFont [UIFont systemFontOfSize:15]
 NS_ASSUME_NONNULL_BEGIN
 @class CZMessage;
 @interface CZMessageFrame : NSObject

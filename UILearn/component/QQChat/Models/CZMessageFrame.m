@@ -23,8 +23,10 @@
     CGFloat timeY = 0;
     CGFloat timeW = screenW;
     CGFloat timeH = 15;
-    // 如果需要显示时间label, 那么再计算时间label的frame
-    _timeFrame = CGRectMake(timeX, timeY, timeW, timeH);
+    if (!message.hideTime) {
+        // 如果需要显示时间label, 那么再计算时间label的frame
+        _timeFrame = CGRectMake(timeX, timeY, timeW, timeH);
+    }
     
     // 计算头像的frame
     CGFloat iconW = 30;

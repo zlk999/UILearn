@@ -94,6 +94,9 @@
 
 - (void)setUpAllChildVc{
     
+    XDiscoverController *logVC  =[XDiscoverController new];
+    [self setUpOneChildVcWithVc:logVC Image:@"tab_find_ unselected" selectedImage:@"tab_find_ selected" title:@"发现"];
+    
     QQChat *home = [QQChat new];
     [self setUpOneChildVcWithVc:home Image:@"tab_home_ unselected" selectedImage:@"tab_home_ selected" title:@"主页"];
 
@@ -102,8 +105,7 @@
 
     
 
-    XDiscoverController *logVC  =[XDiscoverController new];
-    [self setUpOneChildVcWithVc:logVC Image:@"tab_find_ unselected" selectedImage:@"tab_find_ selected" title:@"发现"];
+
 //    logVC.tabBarItem.badgeValue = @"消息";
     
     XDiscoverController *Lock = [XDiscoverController new];
