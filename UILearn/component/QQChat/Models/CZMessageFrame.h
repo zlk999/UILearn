@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define textFont [UIFont systemFontOfSize:13]
 NS_ASSUME_NONNULL_BEGIN
 @class CZMessage;
 @interface CZMessageFrame : NSObject
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign, readonly) CGRect textFrame;
 
 //行高
-@property(nonatomic, assign, readonly) CGFloat rowHeught;
+@property(nonatomic, assign, readonly) CGFloat rowHeight;
 
 @end
 

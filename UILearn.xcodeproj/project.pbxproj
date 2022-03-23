@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0879AF87896B89868F3ED7AD /* Pods_UILearn_UILearnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9E5044A6A43DA0DE920B07 /* Pods_UILearn_UILearnUITests.framework */; };
 		1658C7467DC92E74296BE1C8 /* Pods_UILearnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020F0D5775AD5F700D975935 /* Pods_UILearnTests.framework */; };
+		1811CEAD27EA004600C5A335 /* NSString+CZNSStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811CEAC27EA004600C5A335 /* NSString+CZNSStringExt.m */; };
 		1819F1EF277953C100F79694 /* XNetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819F1EE277953C100F79694 /* XNetModel.m */; };
 		181DBECF27BCCF7B005D5EBB /* XDeleFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DBECD27BCCF7B005D5EBB /* XDeleFirstVC.m */; };
 		181DBED027BCCF7B005D5EBB /* XDeleFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181DBECE27BCCF7B005D5EBB /* XDeleFirstVC.xib */; };
@@ -99,6 +100,8 @@
 
 /* Begin PBXFileReference section */
 		020F0D5775AD5F700D975935 /* Pods_UILearnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UILearnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1811CEAB27EA004600C5A335 /* NSString+CZNSStringExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZNSStringExt.h"; sourceTree = "<group>"; };
+		1811CEAC27EA004600C5A335 /* NSString+CZNSStringExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZNSStringExt.m"; sourceTree = "<group>"; };
 		1819F1ED277953C100F79694 /* XNetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNetModel.h; sourceTree = "<group>"; };
 		1819F1EE277953C100F79694 /* XNetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNetModel.m; sourceTree = "<group>"; };
 		181DBECC27BCCF7B005D5EBB /* XDeleFirstVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDeleFirstVC.h; sourceTree = "<group>"; };
@@ -262,6 +265,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1811CEAA27EA000600C5A335 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1811CEAB27EA004600C5A335 /* NSString+CZNSStringExt.h */,
+				1811CEAC27EA004600C5A335 /* NSString+CZNSStringExt.m */,
+				186D73CC27D4AA8B00D3C102 /* UIButton+XExtension.h */,
+				186D73CD27D4AA8B00D3C102 /* UIButton+XExtension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		181DBED627BCD04B005D5EBB /* Block */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,7 +366,7 @@
 		183FCE7D274C8D3B00E7964B /* UILearn */ = {
 			isa = PBXGroup;
 			children = (
-				186D73CB27D4AA5900D3C102 /* category */,
+				1811CEAA27EA000600C5A335 /* Categories */,
 				187E613A277AAEA0008D01B6 /* Resource */,
 				189C48BF274F7214003A5203 /* Tools */,
 				183FCEBB274CB68000E7964B /* component */,
@@ -509,15 +523,6 @@
 				184A888C27E9B064002A135A /* QQChat.xib */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		186D73CB27D4AA5900D3C102 /* category */ = {
-			isa = PBXGroup;
-			children = (
-				186D73CC27D4AA8B00D3C102 /* UIButton+XExtension.h */,
-				186D73CD27D4AA8B00D3C102 /* UIButton+XExtension.m */,
-			);
-			path = category;
 			sourceTree = "<group>";
 		};
 		187A8CDC27D8DAA500F7986E /* RandomPickFood */ = {
@@ -961,6 +966,7 @@
 				18EFE40427E0B52D008F9458 /* XNotificationLister.m in Sources */,
 				183FCEB6274C947E00E7964B /* NavigationController.m in Sources */,
 				183FCEC5274CB78C00E7964B /* XDiscoverController.m in Sources */,
+				1811CEAD27EA004600C5A335 /* NSString+CZNSStringExt.m in Sources */,
 				184A889127E9B095002A135A /* CZMessageCell.m in Sources */,
 				18925ECB27E21A0B00FE73AA /* QQListVC.m in Sources */,
 				187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */,

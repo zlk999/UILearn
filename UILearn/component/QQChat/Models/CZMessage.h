@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 //消息发送的时间
 @property(nonatomic, copy) NSString *time;
 //枚举 消息的类型  表示是别人发送还是自己发送
-@property(nonatomic, assign) CZMessageType *type;
+@property(nonatomic, assign) CZMessageType type;
 
 - (instancetype)initWithDic:(NSDictionary *)dic;
 + (instancetype)CZMessageWithDic:(NSDictionary *)dic;

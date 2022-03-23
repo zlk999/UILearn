@@ -8,17 +8,19 @@
 #import "TabBarController.h"
 #import "NavigationController.h"
 //
-#import "XHomeController.h"
-#import "XMessageController.h"
-#import "XProfileController.h"
-#import "XDiscoverController.h"
-#import "XWeatherHome.h"
-#import "XImagePickCV.h"
-//#import "XTabBar.h"
-#import "XRandomPickFoof.h"
-#import "XNotification.h"
+#import "XHomeController.h"  // 刷新页
+#import "XMessageController.h"  // 测试
+#import "XProfileController.h"  // 个人
+#import "XDiscoverController.h"  // 发现
+#import "XWeatherHome.h"  // 天气
 
-#import "QQListVC.h"
+//#import "XImagePickCV.h"   //
+//#import "XTabBar.h"
+//#import "XRandomPickFoof.h"   // 选餐系统
+//#import "XNotification.h"   // 通知学习
+
+//#import "QQListVC.h"   // QQ好友列表
+#import "QQChat.h"   // QQ聊天界面
 
 @interface TabBarController ()
 @property (nonatomic, strong) NSMutableArray *items;
@@ -92,7 +94,7 @@
 
 - (void)setUpAllChildVc{
     
-    QQListVC *home = [QQListVC new];
+    QQChat *home = [QQChat new];
     [self setUpOneChildVcWithVc:home Image:@"tab_home_ unselected" selectedImage:@"tab_home_ selected" title:@"主页"];
 
     XWeatherHome *SearVC = [XWeatherHome new];
