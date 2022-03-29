@@ -20,7 +20,11 @@
 //#import "XNotification.h"   // 通知学习
 
 //#import "QQListVC.h"   // QQ好友列表
-#import "QQChat.h"   // QQ聊天界面
+//#import "QQChat.h"   // QQ聊天界面
+//#import "Provence.h" //pickerview选择省市并展示
+//#import "FlagVCViewController.h"  //自定义pickerview
+//#import "KeyBoardDIYVC.h"    //自定义键盘
+#import "APPObject.h"
 
 @interface TabBarController ()
 @property (nonatomic, strong) NSMutableArray *items;
@@ -94,11 +98,13 @@
 
 - (void)setUpAllChildVc{
     
+    APPObject *home = [APPObject new];
+    [self setUpOneChildVcWithVc:home Image:@"tab_home_ unselected" selectedImage:@"tab_home_ selected" title:@"主页"];
+    
     XDiscoverController *logVC  =[XDiscoverController new];
     [self setUpOneChildVcWithVc:logVC Image:@"tab_find_ unselected" selectedImage:@"tab_find_ selected" title:@"发现"];
     
-    QQChat *home = [QQChat new];
-    [self setUpOneChildVcWithVc:home Image:@"tab_home_ unselected" selectedImage:@"tab_home_ selected" title:@"主页"];
+   
 
     XWeatherHome *SearVC = [XWeatherHome new];
     [self setUpOneChildVcWithVc:SearVC Image:@"tab_weather_ selected-1" selectedImage:@"tab_weather_ selected" title:@"天气"];

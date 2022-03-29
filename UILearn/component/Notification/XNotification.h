@@ -5,11 +5,11 @@
 //  Created by apple on 2022/3/15.
 //
 
-#import "ViewController.h"
+#import "Provence.h"
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XNotification : ViewController
+@interface XNotification : Provence
 
 @end
 

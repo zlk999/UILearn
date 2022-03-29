@@ -14,7 +14,6 @@
 @property (nonatomic, strong) NSMutableArray *messageFrames;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-
 @end
 
 @implementation QQChat
@@ -80,6 +79,7 @@
     
     [UIView animateWithDuration:0.25 animations:^{
             self.view.transform = CGAffineTransformMakeTranslation(0, tranformValue);
+//        self.view.bounds.origin.y = tranformValue;
     }];
     
     // 让UITableView的最后一行滚动到最上面

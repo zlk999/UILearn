@@ -17,9 +17,12 @@
 		181DBED527BCCF9B005D5EBB /* XDeleSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181DBED327BCCF9B005D5EBB /* XDeleSecondVC.xib */; };
 		182D67592750B9C7001411AA /* XHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D67572750B9C7001411AA /* XHomeCell.m */; };
 		182D675D2750BAAF001411AA /* XHomeableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D675C2750BAAF001411AA /* XHomeableViewController.m */; };
+		1839E46E27F054B700C0740B /* Provence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839E46C27F054B700C0740B /* Provence.m */; };
+		1839E46F27F054B700C0740B /* Provence.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1839E46D27F054B700C0740B /* Provence.xib */; };
+		1839E47127F0589C00C0740B /* 02cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1839E47027F0589C00C0740B /* 02cities.plist */; };
+		1839E47527F05E6700C0740B /* model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839E47427F05E6700C0740B /* model.m */; };
 		183FCE80274C8D3B00E7964B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FCE7F274C8D3B00E7964B /* AppDelegate.m */; };
 		183FCE83274C8D3B00E7964B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FCE82274C8D3B00E7964B /* SceneDelegate.m */; };
-		183FCE86274C8D3B00E7964B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FCE85274C8D3B00E7964B /* ViewController.m */; };
 		183FCE89274C8D3B00E7964B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183FCE87274C8D3B00E7964B /* Main.storyboard */; };
 		183FCE8B274C8D3F00E7964B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183FCE8A274C8D3F00E7964B /* Assets.xcassets */; };
 		183FCE8E274C8D3F00E7964B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183FCE8C274C8D3F00E7964B /* LaunchScreen.storyboard */; };
@@ -65,6 +68,14 @@
 		189C48C3274F86D0003A5203 /* X3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C48C2274F86D0003A5203 /* X3Controller.m */; };
 		189C48C6274F896A003A5203 /* X4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C48C5274F896A003A5203 /* X4Controller.m */; };
 		189C48C9274F897B003A5203 /* X5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C48C8274F897A003A5203 /* X5Controller.m */; };
+		18ABFBF427F16516003C8488 /* 03flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18ABFBF327F16516003C8488 /* 03flags.plist */; };
+		18ABFBF827F16566003C8488 /* FladModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ABFBF727F16566003C8488 /* FladModel.m */; };
+		18ABFBFC27F1658B003C8488 /* FlagVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ABFBFA27F1658B003C8488 /* FlagVCViewController.m */; };
+		18ABFBFD27F1658B003C8488 /* FlagVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ABFBFB27F1658B003C8488 /* FlagVCViewController.xib */; };
+		18ABFC0027F1661B003C8488 /* FlagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ABFBFF27F1661B003C8488 /* FlagView.m */; };
+		18ABFC0827F193C3003C8488 /* FlagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ABFC0727F193C3003C8488 /* FlagView.xib */; };
+		18ABFC1227F1A58F003C8488 /* KeyBoardDIYVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ABFC1027F1A58F003C8488 /* KeyBoardDIYVC.m */; };
+		18ABFC1327F1A58F003C8488 /* KeyBoardDIYVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ABFC1127F1A58F003C8488 /* KeyBoardDIYVC.xib */; };
 		18C701A3277477770023F6CF /* X1-1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C701A2277477770023F6CF /* X1-1ViewController.m */; };
 		18C701A62774778A0023F6CF /* X1-2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C701A52774778A0023F6CF /* X1-2ViewController.m */; };
 		18CA83A9278C24A300678768 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18CA83A8278C24A300678768 /* city.plist */; };
@@ -76,6 +87,8 @@
 		18EFE40127E0B50C008F9458 /* XNotificationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40027E0B50C008F9458 /* XNotificationSender.m */; };
 		18EFE40427E0B52D008F9458 /* XNotificationLister.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40327E0B52D008F9458 /* XNotificationLister.m */; };
 		18EFE40727E0B680008F9458 /* XNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE40627E0B680008F9458 /* XNotification.m */; };
+		18FD069F27F28A25005A65F8 /* APPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD069D27F28A25005A65F8 /* APPObject.m */; };
+		18FD06A027F28A25005A65F8 /* APPObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FD069E27F28A25005A65F8 /* APPObject.xib */; };
 		18FE26A927E46F0E004D181F /* QQListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE26A727E46F0E004D181F /* QQListCell.m */; };
 		18FE26AA27E46F0E004D181F /* QQListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FE26A827E46F0E004D181F /* QQListCell.xib */; };
 		F49F64E925E5C5864BF3D5A7 /* Pods_UILearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C4056681A7530EE561D493 /* Pods_UILearn.framework */; };
@@ -115,13 +128,17 @@
 		182D67572750B9C7001411AA /* XHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHomeCell.m; sourceTree = "<group>"; };
 		182D675B2750BAAF001411AA /* XHomeableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHomeableViewController.h; sourceTree = "<group>"; };
 		182D675C2750BAAF001411AA /* XHomeableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHomeableViewController.m; sourceTree = "<group>"; };
+		1839E46B27F054B700C0740B /* Provence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Provence.h; sourceTree = "<group>"; };
+		1839E46C27F054B700C0740B /* Provence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Provence.m; sourceTree = "<group>"; };
+		1839E46D27F054B700C0740B /* Provence.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Provence.xib; sourceTree = "<group>"; };
+		1839E47027F0589C00C0740B /* 02cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 02cities.plist; sourceTree = "<group>"; };
+		1839E47327F05E6700C0740B /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		1839E47427F05E6700C0740B /* model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = model.m; sourceTree = "<group>"; };
 		183FCE7B274C8D3B00E7964B /* UILearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		183FCE7E274C8D3B00E7964B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		183FCE7F274C8D3B00E7964B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		183FCE81274C8D3B00E7964B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		183FCE82274C8D3B00E7964B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		183FCE84274C8D3B00E7964B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		183FCE85274C8D3B00E7964B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		183FCE88274C8D3B00E7964B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		183FCE8A274C8D3F00E7964B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183FCE8D274C8D3F00E7964B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -202,6 +219,18 @@
 		189C48C5274F896A003A5203 /* X4Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = X4Controller.m; sourceTree = "<group>"; };
 		189C48C7274F897A003A5203 /* X5Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X5Controller.h; sourceTree = "<group>"; };
 		189C48C8274F897A003A5203 /* X5Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = X5Controller.m; sourceTree = "<group>"; };
+		18ABFBF327F16516003C8488 /* 03flags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 03flags.plist; sourceTree = "<group>"; };
+		18ABFBF627F16566003C8488 /* FladModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FladModel.h; sourceTree = "<group>"; };
+		18ABFBF727F16566003C8488 /* FladModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FladModel.m; sourceTree = "<group>"; };
+		18ABFBF927F1658B003C8488 /* FlagVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagVCViewController.h; sourceTree = "<group>"; };
+		18ABFBFA27F1658B003C8488 /* FlagVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagVCViewController.m; sourceTree = "<group>"; };
+		18ABFBFB27F1658B003C8488 /* FlagVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlagVCViewController.xib; sourceTree = "<group>"; };
+		18ABFBFE27F1661B003C8488 /* FlagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagView.h; sourceTree = "<group>"; };
+		18ABFBFF27F1661B003C8488 /* FlagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagView.m; sourceTree = "<group>"; };
+		18ABFC0727F193C3003C8488 /* FlagView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlagView.xib; sourceTree = "<group>"; };
+		18ABFC0F27F1A58F003C8488 /* KeyBoardDIYVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyBoardDIYVC.h; sourceTree = "<group>"; };
+		18ABFC1027F1A58F003C8488 /* KeyBoardDIYVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyBoardDIYVC.m; sourceTree = "<group>"; };
+		18ABFC1127F1A58F003C8488 /* KeyBoardDIYVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyBoardDIYVC.xib; sourceTree = "<group>"; };
 		18C701A1277477770023F6CF /* X1-1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "X1-1ViewController.h"; sourceTree = "<group>"; };
 		18C701A2277477770023F6CF /* X1-1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "X1-1ViewController.m"; sourceTree = "<group>"; };
 		18C701A42774778A0023F6CF /* X1-2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "X1-2ViewController.h"; sourceTree = "<group>"; };
@@ -223,6 +252,9 @@
 		18EFE40527E0B680008F9458 /* XNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNotification.h; sourceTree = "<group>"; };
 		18EFE40627E0B680008F9458 /* XNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNotification.m; sourceTree = "<group>"; };
 		18F8DD302754660B007BDE85 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		18FD069C27F28A25005A65F8 /* APPObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPObject.h; sourceTree = "<group>"; };
+		18FD069D27F28A25005A65F8 /* APPObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPObject.m; sourceTree = "<group>"; };
+		18FD069E27F28A25005A65F8 /* APPObject.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APPObject.xib; sourceTree = "<group>"; };
 		18FE26A627E46F0E004D181F /* QQListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQListCell.h; sourceTree = "<group>"; };
 		18FE26A727E46F0E004D181F /* QQListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQListCell.m; sourceTree = "<group>"; };
 		18FE26A827E46F0E004D181F /* QQListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQListCell.xib; sourceTree = "<group>"; };
@@ -341,6 +373,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1839E46927F0546F00C0740B /* ProvenceSelect */ = {
+			isa = PBXGroup;
+			children = (
+				1839E47227F05A5C00C0740B /* models */,
+				1839E46B27F054B700C0740B /* Provence.h */,
+				1839E46C27F054B700C0740B /* Provence.m */,
+				1839E46D27F054B700C0740B /* Provence.xib */,
+			);
+			path = ProvenceSelect;
+			sourceTree = "<group>";
+		};
+		1839E47227F05A5C00C0740B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1839E47327F05E6700C0740B /* model.h */,
+				1839E47427F05E6700C0740B /* model.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		183FCE72274C8D3B00E7964B = {
 			isa = PBXGroup;
 			children = (
@@ -373,8 +425,6 @@
 				183FCEBA274C970D00E7964B /* BaseController */,
 				189C48BB274F1CEE003A5203 /* BaseView */,
 				183FCEB3274C93CB00E7964B /* AppDelegate */,
-				183FCE84274C8D3B00E7964B /* ViewController.h */,
-				183FCE85274C8D3B00E7964B /* ViewController.m */,
 				183FCE87274C8D3B00E7964B /* Main.storyboard */,
 				183FCE8A274C8D3F00E7964B /* Assets.xcassets */,
 				183FCE8C274C8D3F00E7964B /* LaunchScreen.storyboard */,
@@ -427,13 +477,17 @@
 		183FCEBB274CB68000E7964B /* component */ = {
 			isa = PBXGroup;
 			children = (
-				184A888627E9AF71002A135A /* QQChat */,
+				18FD069B27F289ED005A65F8 /* ApplicationObject */,
 				181DBED627BCD04B005D5EBB /* Block */,
 				181DBED727BCD05A005D5EBB /* Delegate */,
 				183FCEBD274CB6C800E7964B /* Discover */,
+				18ABFBEF27F164A6003C8488 /* FlagSelect */,
 				183FCEBC274CB6B500E7964B /* Home */,
+				18ABFC0927F19770003C8488 /* KeyBoardDIY */,
 				18EFE3FE27E0B4C8008F9458 /* Notification */,
 				183FCEBF274CB6E000E7964B /* profile */,
+				1839E46927F0546F00C0740B /* ProvenceSelect */,
+				184A888627E9AF71002A135A /* QQChat */,
 				18925EC427E219A400FE73AA /* QQList */,
 				187A8CDC27D8DAA500F7986E /* RandomPickFood */,
 				183FCEBE274CB6D500E7964B /* Weather */,
@@ -551,10 +605,12 @@
 		187E613A277AAEA0008D01B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				184A889827E9B406002A135A /* messages.plist */,
 				18512A2F27D9916800E55641 /* 01foods.plist */,
-				18925EC227E2198E00FE73AA /* friends.plist */,
+				1839E47027F0589C00C0740B /* 02cities.plist */,
+				18ABFBF327F16516003C8488 /* 03flags.plist */,
 				18CA83A8278C24A300678768 /* city.plist */,
+				18925EC227E2198E00FE73AA /* friends.plist */,
+				184A889827E9B406002A135A /* messages.plist */,
 				187E613B277AAECF008D01B6 /* mapCode.db */,
 			);
 			path = Resource;
@@ -632,6 +688,55 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		18ABFBEF27F164A6003C8488 /* FlagSelect */ = {
+			isa = PBXGroup;
+			children = (
+				18ABFBF227F164D6003C8488 /* Models */,
+				18ABFBF127F164C3003C8488 /* ViewControllers */,
+				18ABFBF027F164BB003C8488 /* Views */,
+			);
+			path = FlagSelect;
+			sourceTree = "<group>";
+		};
+		18ABFBF027F164BB003C8488 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18ABFBFE27F1661B003C8488 /* FlagView.h */,
+				18ABFBFF27F1661B003C8488 /* FlagView.m */,
+				18ABFC0727F193C3003C8488 /* FlagView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18ABFBF127F164C3003C8488 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18ABFBF927F1658B003C8488 /* FlagVCViewController.h */,
+				18ABFBFA27F1658B003C8488 /* FlagVCViewController.m */,
+				18ABFBFB27F1658B003C8488 /* FlagVCViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18ABFBF227F164D6003C8488 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18ABFBF627F16566003C8488 /* FladModel.h */,
+				18ABFBF727F16566003C8488 /* FladModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18ABFC0927F19770003C8488 /* KeyBoardDIY */ = {
+			isa = PBXGroup;
+			children = (
+				18ABFC0F27F1A58F003C8488 /* KeyBoardDIYVC.h */,
+				18ABFC1027F1A58F003C8488 /* KeyBoardDIYVC.m */,
+				18ABFC1127F1A58F003C8488 /* KeyBoardDIYVC.xib */,
+			);
+			path = KeyBoardDIY;
+			sourceTree = "<group>";
+		};
 		18CFEBA8277844F500C1C19F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -667,6 +772,16 @@
 				18EFE40627E0B680008F9458 /* XNotification.m */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		18FD069B27F289ED005A65F8 /* ApplicationObject */ = {
+			isa = PBXGroup;
+			children = (
+				18FD069C27F28A25005A65F8 /* APPObject.h */,
+				18FD069D27F28A25005A65F8 /* APPObject.m */,
+				18FD069E27F28A25005A65F8 /* APPObject.xib */,
+			);
+			path = ApplicationObject;
 			sourceTree = "<group>";
 		};
 		1C86BFD7F16CA6764E8918D9 /* Frameworks */ = {
@@ -802,18 +917,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				184A889927E9B406002A135A /* messages.plist in Resources */,
+				18ABFBF427F16516003C8488 /* 03flags.plist in Resources */,
+				1839E46F27F054B700C0740B /* Provence.xib in Resources */,
 				18925ECC27E21A0B00FE73AA /* QQListVC.xib in Resources */,
 				183FCE8E274C8D3F00E7964B /* LaunchScreen.storyboard in Resources */,
+				18FD06A027F28A25005A65F8 /* APPObject.xib in Resources */,
 				18512A3027D9916800E55641 /* 01foods.plist in Resources */,
 				18925EC327E2198E00FE73AA /* friends.plist in Resources */,
 				181DBED527BCCF9B005D5EBB /* XDeleSecondVC.xib in Resources */,
+				1839E47127F0589C00C0740B /* 02cities.plist in Resources */,
 				183FCE8B274C8D3F00E7964B /* Assets.xcassets in Resources */,
 				1845770D27BBCF1900B254C7 /* XThirdVC.xib in Resources */,
 				18CA83A9278C24A300678768 /* city.plist in Resources */,
+				18ABFC0827F193C3003C8488 /* FlagView.xib in Resources */,
 				181DBED027BCCF7B005D5EBB /* XDeleFirstVC.xib in Resources */,
 				18FE26AA27E46F0E004D181F /* QQListCell.xib in Resources */,
 				187A8CE127D8DAF900F7986E /* XRandomPickFoof.xib in Resources */,
+				18ABFBFD27F1658B003C8488 /* FlagVCViewController.xib in Resources */,
 				1845770827BBBF9600B254C7 /* XSecondVC.xib in Resources */,
+				18ABFC1327F1A58F003C8488 /* KeyBoardDIYVC.xib in Resources */,
 				183FCE89274C8D3B00E7964B /* Main.storyboard in Resources */,
 				184A888E27E9B064002A135A /* QQChat.xib in Resources */,
 				187E613C277AAECF008D01B6 /* mapCode.db in Resources */,
@@ -944,6 +1066,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ABFC0027F1661B003C8488 /* FlagView.m in Sources */,
+				1839E46E27F054B700C0740B /* Provence.m in Sources */,
 				183FCEC8274CB7A100E7964B /* XMessageController.m in Sources */,
 				189C48BE274F71BF003A5203 /* X2Controller.m in Sources */,
 				18CFEBAB2778451A00C1C19F /* XNetCell.m in Sources */,
@@ -951,7 +1075,6 @@
 				18C701A3277477770023F6CF /* X1-1ViewController.m in Sources */,
 				1819F1EF277953C100F79694 /* XNetModel.m in Sources */,
 				186D73CE27D4AA8B00D3C102 /* UIButton+XExtension.m in Sources */,
-				183FCE86274C8D3B00E7964B /* ViewController.m in Sources */,
 				189C48C9274F897B003A5203 /* X5Controller.m in Sources */,
 				18FE26A927E46F0E004D181F /* QQListCell.m in Sources */,
 				18D398EF27770D1A00B24617 /* Xstatus.m in Sources */,
@@ -959,16 +1082,19 @@
 				18925ECF27E21A6A00FE73AA /* friend.m in Sources */,
 				187A8CE027D8DAF900F7986E /* XRandomPickFoof.m in Sources */,
 				18EFE40127E0B50C008F9458 /* XNotificationSender.m in Sources */,
+				1839E47527F05E6700C0740B /* model.m in Sources */,
 				182D675D2750BAAF001411AA /* XHomeableViewController.m in Sources */,
 				181DBED427BCCF9B005D5EBB /* XDeleSecondVC.m in Sources */,
 				187E613F277ADD04008D01B6 /* XSearchDBTool.m in Sources */,
 				18D398EB277707CA00B24617 /* XWeather.m in Sources */,
+				18ABFC1227F1A58F003C8488 /* KeyBoardDIYVC.m in Sources */,
 				18EFE40427E0B52D008F9458 /* XNotificationLister.m in Sources */,
 				183FCEB6274C947E00E7964B /* NavigationController.m in Sources */,
 				183FCEC5274CB78C00E7964B /* XDiscoverController.m in Sources */,
 				1811CEAD27EA004600C5A335 /* NSString+CZNSStringExt.m in Sources */,
 				184A889127E9B095002A135A /* CZMessageCell.m in Sources */,
 				18925ECB27E21A0B00FE73AA /* QQListVC.m in Sources */,
+				18ABFBFC27F1658B003C8488 /* FlagVCViewController.m in Sources */,
 				187E6142277AE99D008D01B6 /* XDownWeatherInfo.m in Sources */,
 				1889AD2027D1AC8700906A10 /* Model.xcdatamodeld in Sources */,
 				183FCEC2274CB77300E7964B /* XHomeController.m in Sources */,
@@ -978,6 +1104,7 @@
 				182D67592750B9C7001411AA /* XHomeCell.m in Sources */,
 				18925ED227E21BF400FE73AA /* groups.m in Sources */,
 				18EFE40727E0B680008F9458 /* XNotification.m in Sources */,
+				18FD069F27F28A25005A65F8 /* APPObject.m in Sources */,
 				1894489F278448B20051148F /* XWeatherHome.m in Sources */,
 				183FCECB274CB7AF00E7964B /* XProfileController.m in Sources */,
 				189C48C3274F86D0003A5203 /* X3Controller.m in Sources */,
@@ -993,6 +1120,7 @@
 				183FCE91274C8D3F00E7964B /* main.m in Sources */,
 				18CA83AC278ED48E00678768 /* XImagePickCV.m in Sources */,
 				183FCE83274C8D3B00E7964B /* SceneDelegate.m in Sources */,
+				18ABFBF827F16566003C8488 /* FladModel.m in Sources */,
 				184A888D27E9B064002A135A /* QQChat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
