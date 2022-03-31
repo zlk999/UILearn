@@ -18,6 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.BTN.layer.masksToBounds = YES;
+    self.BTN.layer.cornerRadius = 10;
+    self.BTN.backgroundColor = [UIColor blueColor];
+    self.BTN.titleLabel.text = @"点击按钮，展示一条通知";
+    [self.BTN setTitle:@"点击按钮，展示一条通知" forState:UIControlStateNormal];
+    [self.BTN setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
 }
 
@@ -49,10 +55,11 @@
     }];
     
     
-    // 添加通知的一些操作
+    // 添加通知的一些操作 当点击查看通知的时候，会出现
     UNNotificationAction *openAction = [UNNotificationAction actionWithIdentifier:@"open" title:@"打开" options:UNNotificationActionOptionForeground];
     UNNotificationAction *closeAction = [UNNotificationAction actionWithIdentifier:@"close" title:@"关闭" options:UNNotificationActionOptionDestructive];
-    UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"category" actions:@[openAction, closeAction] intentIdentifiers:@[] options:UNNotificationCategoryOptionCustomDismissAction];
+    UNNotificationAction *tempAction = [UNNotificationAction actionWithIdentifier:@"tempAction" title:@"咋回事" options:UNNotificationActionOptionAuthenticationRequired];
+    UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"category" actions:@[openAction, closeAction, tempAction] intentIdentifiers:@[] options:UNNotificationCategoryOptionCustomDismissAction];
         
     NSSet *sets = [NSSet setWithObject:category];
     [UNUserNotificationCenter.currentNotificationCenter setNotificationCategories:sets];
